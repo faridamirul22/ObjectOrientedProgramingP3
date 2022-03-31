@@ -12,6 +12,7 @@ class EmployeeA(_id: Int, _name: String, _age: Int) {
         get() = field
         set(value) {
             field = if(value > 0) value else throw IllegalArgumentException("Age must be greater than zero")
+        }
 }
 fun main() {
     val emp = EmployeeA(1101, "Jono", 25)
